@@ -1,4 +1,4 @@
-package com.example;
+package com.example.broker;
 
 import broker.error.CustomError;
 import broker.model.Quote;

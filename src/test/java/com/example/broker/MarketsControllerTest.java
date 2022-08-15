@@ -1,7 +1,5 @@
-package com.example;
+package com.example.broker;
 
-import broker.model.Quote;
-import broker.store.InMemoryStore;
 import io.micronaut.http.client.RxHttpClient;
 import io.micronaut.http.client.annotation.Client;
 import io.micronaut.runtime.EmbeddedApplication;
