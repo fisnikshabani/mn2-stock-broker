@@ -10,6 +10,16 @@ micronaut:
           secret:
             generator:
               secret: changeThisSecretToSomethingSecret
+flyway:
+  datasource:
+    default:
+      enabled: true
+      clean-schema: false
+      url: ${PG_JDBC_URL:'jdbc:postgresql://127.0.0.1:5432/mn2-stock-broker'}
+      user: ${PG_USERNAME:postgres}
+      password: ${PG_PASSWORD} #secret
+      schemas: mn2
+      default-schema: mn2
 
 
 

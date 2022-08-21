@@ -1,13 +1,9 @@
 package com.example.broker.account;
 
-import broker.account.WatchListController;
-import broker.error.CustomError;
-import broker.model.Quote;
-import broker.model.Symbol;
-import broker.model.WatchList;
-import broker.store.InMemoryAccountStore;
-import broker.store.InMemoryStore;
-import io.micronaut.core.type.Argument;
+import com.example.account.WatchListController;
+import com.example.model.Symbol;
+import com.example.model.WatchList;
+import com.example.store.InMemoryAccountStore;
 import io.micronaut.http.HttpRequest;
 import io.micronaut.http.HttpResponse;
 import io.micronaut.http.HttpStatus;
@@ -24,11 +20,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.inject.Inject;
-import java.math.BigDecimal;
 import java.util.List;
-import java.util.Optional;
 import java.util.UUID;
-import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 

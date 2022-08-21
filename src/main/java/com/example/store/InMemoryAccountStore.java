@@ -1,6 +1,6 @@
-package broker.store;
+package com.example.store;
 
-import broker.model.WatchList;
+import com.example.model.WatchList;
 
 import javax.inject.Singleton;
 import java.util.HashMap;

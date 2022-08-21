@@ -1,4 +1,4 @@
-package auth.jwt;
+package com.example.jwt;
 
 import io.micronaut.http.HttpRequest;
 import io.micronaut.security.authentication.*;

@@ -1,7 +1,7 @@
-package broker.store;
+package com.example.store;
 
-import broker.model.Quote;
-import broker.model.Symbol;
+import com.example.model.Quote;
+import com.example.model.Symbol;
 
 import javax.inject.Singleton;
 import java.math.BigDecimal;

@@ -1,7 +1,7 @@
-package broker;
+package com.example.broker;
 
-import broker.model.Symbol;
-import broker.store.InMemoryStore;
+import com.example.model.Symbol;
+import com.example.store.InMemoryStore;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;
 import io.micronaut.security.annotation.Secured;

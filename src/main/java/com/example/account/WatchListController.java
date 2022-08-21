@@ -1,7 +1,7 @@
-package broker.account;
+package com.example.account;
 
-import broker.model.WatchList;
-import broker.store.InMemoryAccountStore;
+import com.example.model.WatchList;
+import com.example.store.InMemoryAccountStore;
 import io.micronaut.http.MediaType;
 import io.micronaut.http.annotation.*;
 import io.micronaut.security.annotation.Secured;

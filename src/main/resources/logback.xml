@@ -9,7 +9,10 @@
         </encoder>
     </appender>
 
-    <logger name="com.example" level = "DEBUG" />
+
+    <logger name="org.flywaydb.core" level="DEBUG"/>
+    <logger name="io.micronaut.flyway" level="DEBUG"/>
+    <logger name="com.example" level="debug"/>
 
 
     <root level="info">

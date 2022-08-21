@@ -1,8 +1,8 @@
-package broker;
+package com.example.broker;
 
-import broker.error.CustomError;
-import broker.model.Quote;
-import broker.store.InMemoryStore;
+import com.example.error.CustomError;
+import com.example.model.Quote;
+import com.example.store.InMemoryStore;
 import io.micronaut.http.HttpResponse;
 import io.micronaut.http.HttpStatus;
 import io.micronaut.http.annotation.Controller;

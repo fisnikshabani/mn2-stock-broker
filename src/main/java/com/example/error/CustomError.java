@@ -1,4 +1,4 @@
-package broker.error;
+package com.example.error;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,9 +1,9 @@
 package com.example.broker;
 
-import broker.error.CustomError;
-import broker.model.Quote;
-import broker.model.Symbol;
-import broker.store.InMemoryStore;
+import com.example.error.CustomError;
+import com.example.model.Quote;
+import com.example.model.Symbol;
+import com.example.store.InMemoryStore;
 import io.micronaut.core.type.Argument;
 import io.micronaut.http.HttpStatus;
 import io.micronaut.http.client.RxHttpClient;
