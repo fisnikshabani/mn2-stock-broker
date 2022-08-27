@@ -1,15 +1,18 @@
-CREATE table symbols(
-    VALUE VARCHAR PRIMARY KEY
+CREATE TABLE symbols
+(
+    id    SERIAL PRIMARY KEY,
+    value VARCHAR
 );
 
-create table quotes(
-    id SERIAL primary key,
-    bid numeric,
-    ask numeric,
-    last_price numeric,
-    volume numeric,
-    symbol VARCHAR,
-    foreign key (symbol) REFERENCES symbols(VALUE),
-    constraint last_price_is_positive check ( last_price > 0 ),
-    constraint volume_is_positive_or_zero check ( volume > 0 )
-)
+CREATE TABLE quotes
+(
+    id         SERIAL PRIMARY KEY,
+    bid        NUMERIC,
+    ask        NUMERIC,
+    last_price NUMERIC,
+    volume     NUMERIC,
+    symbol     INTEGER,
+    FOREIGN KEY (symbol) REFERENCES symbols (id),
+    CONSTRAINT last_price_is_positive CHECK (last_price > 0),
+    CONSTRAINT volume_is_positive_or_zero CHECK (volume >= 0)
+);

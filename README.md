@@ -16,3 +16,7 @@
 
 - [https://projectlombok.org/features/all](https://projectlombok.org/features/all)
 
+-- Dockerized Postgres
+
+docker run --name my-postgres -e POSTGRES_PASSWORD=secret -e POSTGRES_DB=mn2-stock-broker -p 5432:5432 -d postgres:latest
+

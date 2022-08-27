@@ -11,15 +11,31 @@ micronaut:
             generator:
               secret: changeThisSecretToSomethingSecret
 flyway:
-  datasource:
+  datasources:
     default:
       enabled: true
       clean-schema: false
       url: ${PG_JDBC_URL:'jdbc:postgresql://127.0.0.1:5432/mn2-stock-broker'}
-      user: ${PG_USERNAME:postgres}
+      username: ${PG_USERNAME:postgres}
       password: ${PG_PASSWORD} #secret
+      driver-class-name: org.postgresql.Driver
       schemas: mn2
       default-schema: mn2
-
-
-
+      schema-generate: NONE
+      dialect: POSTGRES
+datasources:
+  default:
+    url: ${PG_JDBC_URL:'jdbc:postgresql://127.0.0.1:5432/mn2-stock-broker'}
+    username: ${PG_USERNAME:postgres}
+    password: ${PG_PASSWORD} #secret
+    driver-class-name: org.postgresql.Driver
+    schema-generate: NONE
+    dialect: POSTGRES
+#micronaut-data-jpa
+jpa:
+  default:
+    packages-to-scan:
+      - "com.example.broker.persistence"
+    properties:
+      hibernate:
+        show_sql: false
